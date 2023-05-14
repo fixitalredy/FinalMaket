@@ -15,8 +15,6 @@
   transition: transform 0.5s;
   &--showed{
     transform: translateX(0px);
-    position: sticky;
-    top:0;
   } 
 }
 
@@ -141,9 +139,12 @@
     display: inline-flex;
     min-width: 310px; 
     box-shadow: none;
-    max-height: 840px ;
     transform: translateX(0px) ;
-    transition: transform 0s
+    transition: transform 0s;
+    &__container{
+      position: sticky;
+      top:0;
+    }
   }
   .menu-header{
     &__close{
@@ -151,9 +152,8 @@
     }
   } 
   .menu-main {
-
     &__list {
-      min-height:520px;
+      max-height:520px;
     }
   }
 }

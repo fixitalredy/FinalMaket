@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://fixitalredy.github.io/FinalMaket/", 
+  "homepage": "https://fixitalredy.github.io/FinalMaket/",
   "scripts": {
     "start": "webpack serve",
     "build-dev": "webpack",
