@@ -43,14 +43,6 @@ closeHeader.addEventListener("click", function () {
 });
 
 window.addEventListener("scroll", function () {
-  var scrollY = window.scrollY || window.pageYOffset;
-  menu.style.transform = "translateY(" + scrollY + "px)";
-  if (mediaQuery.matches) {
-    menu.style.transform = "translateX(-360px)";
-    menuBlur.classList.remove("menu-blur--showed");
-    call.classList.remove("call--showed");
-    feedback.classList.remove("feedback--showed");
-  }
   menuBlur.classList.remove("menu-blur--showed");
   menu.classList.remove("menu--showed");
   feedback.classList.remove("feedback--showed");
@@ -66,11 +58,13 @@ let callClose = document.querySelector(".call__close");
 headerCall.addEventListener("click", function () {
   call.classList.add("call--showed");
   menuBlur.classList.add("menu-blur--showed");
+  feedback.classList.remove("feedback--showed");
 });
 menuCall.addEventListener("click", function () {
   call.classList.add("call--showed");
   menuBlur.classList.add("menu-blur--showed");
   menu.classList.remove("menu--showed");
+  feedback.classList.remove("feedback--showed");
 });
 callClose.addEventListener("click", function () {
   menuBlur.classList.remove("menu-blur--showed");
@@ -84,11 +78,13 @@ let feedbackClose = document.querySelector(".feedback__close");
 headerFeedback.addEventListener("click", function () {
   feedback.classList.add("feedback--showed");
   menuBlur.classList.add("menu-blur--showed");
+  call.classList.remove("call--showed");
 });
 menuFeedback.addEventListener("click", function () {
   feedback.classList.add("feedback--showed");
   menuBlur.classList.add("menu-blur--showed");
   menu.classList.remove("menu--showed");
+  call.classList.remove("call--showed");
 });
 feedbackClose.addEventListener("click", function () {
   menuBlur.classList.remove("menu-blur--showed");
