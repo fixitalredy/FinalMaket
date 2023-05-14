@@ -48,9 +48,13 @@ window.addEventListener("scroll", function () {
   if (mediaQuery.matches) {
     menu.style.transform = "translateX(-360px)";
     menuBlur.classList.remove("menu-blur--showed");
+    call.classList.remove("call--showed");
+    feedback.classList.remove("feedback--showed");
   }
   menuBlur.classList.remove("menu-blur--showed");
   menu.classList.remove("menu--showed");
+  call.classList.remove("call--showed");
+  feedback.classList.remove("feedback--showed");
 });
 
 //call--------------------------------------------------------//
@@ -77,6 +81,7 @@ let headerFeedback = document.querySelector(".header__chat");
 let menuFeedback = document.querySelector(".menu-footer__chat");
 let feedback = document.querySelector(".feedback");
 let feedbackClose = document.querySelector(".feedback__close");
+
 headerFeedback.addEventListener("click", function () {
   feedback.classList.add("feedback--showed");
   menuBlur.classList.add("menu-blur--showed");
