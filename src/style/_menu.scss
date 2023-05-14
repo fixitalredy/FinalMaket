@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height:520px;
+    min-height:420px;
   }
   &__list-item {
     font-size: 16px;
@@ -147,5 +147,10 @@
       display:none;
     }
   } 
-  
+  .menu-main {
+
+    &__list {
+      min-height:520px;
+    }
+  }
 }
