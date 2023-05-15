@@ -42,12 +42,6 @@ closeHeader.addEventListener("click", function () {
   menuBlur.classList.remove("menu-blur--showed");
 });
 
-window.addEventListener("scroll", function () {
-  menuBlur.classList.remove("menu-blur--showed");
-  menu.classList.remove("menu--showed");
-  feedback.classList.remove("feedback--showed");
-  call.classList.remove("call--showed");
-});
 
 //call--------------------------------------------------------//
 let headerCall = document.querySelector(".header__call");
