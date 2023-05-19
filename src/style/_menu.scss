@@ -34,8 +34,9 @@
   }
 }
 .icon{
-  margin-left: auto;
-  margin-right:auto;
+  min-width: 20px; 
+  min-height: 20px; 
+  object-fit: contain;
 }
 .menu-main {
   justify-self:start;

@@ -1,6 +1,6 @@
 @import './var';
 body{
-  background-color:white;
+  background-color:$back;
   font-family: "TT Lakes";
 }
 .content-container{
@@ -14,7 +14,6 @@ body{
   padding-right:16px;
   padding-left: 16px;
   background-color: $back;
-  margin-bottom: 47px;
 }
 .page__container{
   display:flex;
@@ -33,6 +32,7 @@ body{
     }
     .wrapper{
       padding-right:30px;
+      margin-bottom: 20px;
     }
   }
 }

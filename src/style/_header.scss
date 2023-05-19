@@ -42,7 +42,7 @@
 .header__repair::before{
   content: url("./images/divider.svg") ;
   position: absolute;
-  transform: translate(-40px,-5px);
+  transform: translate(-40px,0px);
 }
 
 @media(min-width:$laptop){
@@ -56,20 +56,20 @@
   .header__menu::after{
     content: url("./images/divider.svg");
     position: absolute;
-    transform: translate(40px,-25px);
+    transform: translate(40px,0px);
 
   }
   .header__call {
     margin-right:16px;
-    display: block;
+    display: flex;
   }
   .header__chat {
     margin-right:16px;
-    display: block;
+    display: flex;
   }
   .header__profile {
     margin-right:42px;
-    display: block;
+    display: flex;
   }
   @media(min-width:$desktop){
     .header__container{
