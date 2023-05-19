@@ -1,6 +1,7 @@
 .price{
   display: flex;
   flex-direction: column;
+  height:100%;
   &__header {
     padding-top:16px;
     padding-bottom:16px;
@@ -9,7 +10,8 @@
     margin-left: -30px;
     margin-bottom: 24px;
     background-color: white;
-    border-top: 1px solid $border
+    border-top: 1px solid $border;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
   }
   &__main{
     display: flex;
@@ -17,7 +19,7 @@
     overflow: hidden;
     width:100%;
     position: relative;
-    height: 260px;
+    height: 400px;
   }
   &__swiper-slide{
     height: 200px;
@@ -55,7 +57,8 @@
     height:260px;
   }
   &__bullets{
-      bottom: 15px !important;
+    position: absolute !important;
+      top: 220px !important;
     }
   &__text{
     font-weight: 400;
@@ -99,9 +102,7 @@
   display: none;
   margin-bottom: 32px;
 }
-.price__main{
-  height:260px
-}
+
 .table__header{
   tr{
     th{
@@ -206,15 +207,13 @@
       display: table;
     }
     &__main{
-      height:570px
+      height:520px
     }
   } 
 }
 @media (min-width: $desktop){
   .price{
-    &__main{
-      height:570px
-    }
+    height:580px;
     &__header {
       width: calc(100% + 60px); 
     }

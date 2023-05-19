@@ -141,6 +141,7 @@
     box-shadow: none;
     transform: translateX(0px) ;
     transition: transform 0s;
+    z-index: 2;
     &__container{
       position: sticky;
       top:0;
