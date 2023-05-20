@@ -33,7 +33,7 @@
         </div>
         <div class="menu-footer">
           <div class="menu-footer__button-row">
-            <button class="menu-footer__call button"><img class="icon" src="./images/call_icon.svg" alt="Звонок" width="20px" height ="20px"></button>
+            <button class="menu-footer__call button"><img class="icon" src="./images/call_icon.svg" alt="Звонок" ></button>
             <button class="menu-footer__chat button"><img class="icon" src="./images/chat_icon.svg" alt="Чат"></button>
             <button class="menu-footer__profile button"><img class="icon" src="./images/profile_icon.svg" alt="Профиль"></button>
           </div>
@@ -127,8 +127,14 @@
             <div class="page__container">
               <div class="page__service service">
                 <h1 class="service__title">Услуги и сервисы</h1>
-                <button class="service__repair button"><div class="service__button-container-repair"><span class="repair__repair-text">Оставить заявку</span><img class="icon" src="./images/repair_icon.svg" alt="Проверить"></div></button>
-                <button class="service__check button"><div class="service__button-container-check"><span class="check__check-text">Статус ремонта</span><img class="icon" src="./images/check_icon.svg" alt="Чек"></div></button>
+                <div class="service__repair-container">
+                  <span class="repair__repair-text">Оставить заявку</span>
+                  <button class="service__repair button"> <img class="icon" src="./images/repair_icon.svg" alt="Проверить"></button>
+                </div>
+                <div class="service__check-container">
+                  <span class="check__check-text">Оставить заявку</span>
+                  <button class="service__check button"> <img class="icon" src="./images/check_icon.svg" alt="Проверить"></button>
+                </div>
                 <ul class="service__list">
                   <li class="service__item service__item--active"><a href="#" class="service__item-link">Ремонтируемые устройства</a></li>
                   <li class="service__item"><a href="#" class="service__item-link">Дополнительные услуги</a></li>
